@@ -61,6 +61,17 @@ namespace _4lab
             }
         }
 
-
+        private static void Divide(double? A, double? B)
+        {
+            if (A == null || B == null)
+            {
+                Console.WriteLine("Please enter values.");
+                Console.ReadKey();
+                return;
+            }
+            double? result = A / B;
+            Console.WriteLine($"{A} / {B} is {result}");
+            Console.ReadKey();
+        }
     }
 }
