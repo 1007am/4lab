@@ -61,7 +61,6 @@ namespace _4lab
             }
         }
 
-
         private static void SetA()
         {
             Console.Write("Enter: ");
@@ -72,6 +71,19 @@ namespace _4lab
         {
             Console.Write("Enter: ");
             _B = Convert.ToInt32(Console.ReadLine());
+        }
+
+        private static void Add(double? A, double? B)
+        {
+            if (A == null || B == null)
+            {
+                Console.WriteLine("Please enter values.");
+                Console.ReadKey();
+                return;
+            }
+            double? result = A + B;
+            Console.WriteLine($"{A} + {B} is {result}");
+            Console.ReadKey();
         }
 
     }
