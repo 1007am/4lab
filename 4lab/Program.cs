@@ -61,6 +61,10 @@ namespace _4lab
             }
         }
 
-
+        private static void SetA()
+        {
+            Console.Write("Enter: ");
+            _A = Convert.ToInt32(Console.ReadLine());
+        }
     }
 }
